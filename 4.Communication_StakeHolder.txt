@@ -1,0 +1,28 @@
+Hello Business Owner,
+
+Hope this email finds you well.
+I'm Ekta working as a Data Analyst at Fetch Rewards. The data provided consists of Users,Brands,Receipts and ReceiptsrewardList table. 
+
+I observed data quality issues which were observed while performing descriptive analysis using python data manipulation libraries.
+I would like to address it as mentioned below:
+
+1.Users table have duplicate users id's.
+UserId being a primary key, duplicated records are to be removed.
+
+2.ReceiptsrewardList column in Receipts table, which itself is a table.
+Nested column from Receipts dataset is a table, for which a user defined function has to be written to capture relevant information. As this table is related to multiple tables, it is important for data extraction.
+
+ 3.The date format provided is not in readable format.
+All the tables constitute date, which is an important variable for generating temporal reports. It should be converted into MM/DD/YYYY format.
+
+Apart from manual data profiling and quality checks, a software tool could be used to perform data validation to adhere to quality procedures.
+As the size of the receipts table grows, indexes can be created, vertical and horizontal partitioning for query tuning and performance optimization can be accomplished and separate table can be created for archived data. Data Governance and lifecycle policies are to be leveraged to minimize storage cost.
+
+Could you please confirm your availability for a discussion addressing these areas.
+
+Thanks and Regards,
+Ekta.
+
+
+
+

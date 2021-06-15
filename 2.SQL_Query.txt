@@ -1,0 +1,11 @@
+What are the top 5 brands by receipts scanned for most recent month?
+
+SELECT DISTINCT b.name AS Brand, COUNT(ReceiptItemsDetails.barcode) AS Brand_Occurence
+FROM brands b
+INNER JOIN ReceiptItemsDetails rid ON b.barcode = rid.barcode
+INNER JOIN receipts r ON rid.Receipt_Id = r.Receipt_Id
+WHERE MONTH(dateScanned) = (select MONTH(max(dateScanned)) from r)
+GROUP BY b.name
+ORDER BY COUNT(rid.barcode) DESC
+LIMIT 5;
+
